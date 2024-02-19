@@ -1,0 +1,255 @@
+    1  ls
+    2  # copy me!
+    3  pwd
+    4  ls
+    5  cd static
+    6  mkdir training_3rd
+    7  ls
+    8  cd training_3rd/
+    9  touch example_01.txt
+   10  ls
+   11  echo Alta3 Research Training rocks!
+   12  echo Alta3 Research has AWESOME labs! > 3rdfile.txt
+   13  echo Alta3 Research has AMAZING labs! >> 3rdfile.txt
+   14  cat 3rdfile.txt 
+   15  mv 3rdfile.txt ego_fuel.txt
+   16  ls
+   17  history 
+   18  man ls
+   19  cd ~
+   20  cd
+   21  vim zork.test
+   22  live gtg
+   23  cat zork.test
+   24  vim zork.test
+   25  cat zork.test
+   26  rm zork.test 
+   27  live gtg
+   28  VS Code - Working Ahead : )
+   29  VS Code - Working Ahead
+   30  mkdir VScode
+   31  ls
+   32  cd VS
+   33  cd VScode/
+   34  cat zork.py 
+   35  python3 zork.py 
+   36  Live gtg
+   37  cd ..
+   38  Live gtg
+   39  llm --help
+   40  YASSSSSSSS!
+   41  llm "Five cute names for a pet penguin"
+   42  llm 'python function that accepts a string and returns that string plus Alta3 appended to the end'
+   43  llm 'python code that bakes a cupcake'
+   44  cd VScode/
+   45  cd ..
+   46  cd VScode/
+   47  vim simple_no_comments.sh
+   48  cat simple_no_comments.sh 
+   49  bash simple_no_comments.sh 
+   50  cat simple_no_comments.sh | llm -s "explain this code"
+   51  live gtg
+   52  cd ..
+   53  git config --global credential.helper store
+   54  git config --global user.name "BuZzGeaR333"
+   55  git config --global user.email "123@example.com"
+   56  ls
+   57  git clone https://github.com/BuZzGeaR333/mycode ~/mycode
+   58  cd mycode/
+   59  ls
+   60  ls -a
+   61  git status
+   62  touch alta3test.txt
+   63  git status
+   64  git add .
+   65  git commit -m "added test file to ensure commits works"
+   66  git push origin -u main
+   67  live gtg
+   68  cd
+   69  live gtg
+   70  ansible --versio
+   71  ansible --version
+   72  python3 -m pip install ansible --user
+   73  python3 -m pip show ansible
+   74  ls -a
+   75  ls -ls
+   76  ls -la
+   77  live gtg
+   78  cat ~/px/scripts/full-setup.sh
+   79  cat ~/px/scripts/full-setup.sh | less
+   80  bash ~/px/scripts/full-setup.sh
+   81  ssh fry
+   82  ssh bender
+   83  ssh zoidberg
+   84  which sshpass
+   85  ssh farnsworth
+   86  ansible localhost -m ansible.builtin.command -a "whoami"
+   87  ansible localhost -a "pwd"
+   88  ansible-doc ansible.builtin.command
+   89  cat ~/px/scripts/full-setup.sh | less
+   90  batcat ~/mycode/inv/dev/hosts
+   91  man batcat
+   92  vim ~/mycode/inv/dev/applerecords
+   93  batcat ~/mycode/inv/dev/applerecords
+   94  batcat ~/.ansible.cfg
+   95  llm "Explain this code: ansible planetexpress -i ~/mycode/inv/dev/hosts -m ansible.builtin.command -a "whoami""
+   96  ansible planetexpress -i ~/mycode/inv/dev/hosts -m ansible.builtin.command -a "whoami"
+   97  ansible fry -a "whoami"
+   98  cd ~student/mycode/inv/dev/
+   99  ls -la
+  100  batcat hosts 
+  101  ansible farnsworth -i ~/mycode/inv/dev/ -m ansible.builtin.ping --ask-pass
+  102  ansible farnsworth -i ~/mycode/inv/dev/ -m ansible.builtin.ping --ask-pass\
+  103  ansible-inventory -i ~/mycode/inv/ --list
+  104  ansible-inventory -i ~/mycode/inv/ --graph
+  105  ansible-inventory -i ~/mycode/inv/ --host fry
+  106  cd ~
+  107  cd mycode/
+  108  git status
+  109  git add .
+  110  git commit -m "Building Ansible Inventory using bash commands"
+  111  git push -u origin main
+  112  git pull
+  113  git pull merge
+  114  git merge main
+  115  git push origin main
+  116  git pull
+  117  git config pull.rebase false
+  118  git pull
+  119  git push origin main
+  120  batcat ~/px/scripts/full-setup.sh
+  121  ansible h2 -i ~/mycode/inv/dev/hosts -m setup
+  122  ansible h2 -i ~/mycode/inv/dev/hosts -m setup | less
+  123  batcat ~/px/scripts/full-setup.sh >> ~/mycode/full-setup.sh
+  124  git add .
+  125  cat ~/px/scripts/full-setup.sh > ~/mycode/full-setup.sh
+  126  git add .
+  127  git commit -m "Copying the Dicker build file"
+  128  git push origin main
+  129  git pull
+  130  git push origin main
+  131  ansible-doc ansible.builtin.ping
+  132  ansible research -i ~/mycode/inv/dev/hosts -m ansible.builtin.ping
+  133  ansible h1 -i ~/mycode/inv/dev/hosts -m setup | less
+  134  batcat ~/.ssh/config
+  135  batcat --help
+  136  batcat --help | less
+  137  batcat ~/.ssh/config
+  138  ansible research -i ~/mycode/inv/dev/hosts -m ping -vvvvv | less
+  139  ansible h2 -i ~/mycode/inv/dev/hosts -m setup | less
+  140  ansible research -i ~/mycode/inv/dev/hosts -m setup -a "filter=ansible_processor_cores" | less
+  141  ansible research -i ~/mycode/inv/dev/hosts -m setup -a "filter=ansible_processor_cores"
+  142  ansible research -i ~/mycode/inv/dev/hosts -m setup -a "filter=ansible_date_time"
+  143  ansible research -i ~/mycode/inv/dev/hosts -m setup -a "filter=ansible_all_ipv4_addresses"
+  144  ansible h2 -i ~/mycode/inv/dev/hosts -m setup > ~/mycode/setup.output
+  145  batcat ~/mycode/setup.output
+  146  live gtg
+  147  batcat ~/setup.output
+  148  batcat ~/mycode/setup.output
+  149  git status
+  150  git add .
+  151  git commit -m "added new output files"
+  152  git push -u origin main
+  153  bash ~/px/scripts/full-setup.sh
+  154  bash ~/px/scripts/full-setup.sh > ~/mycode/setup.output
+  155  cat setup.output
+  156  git add .
+  157  sit push -u origin main
+  158  git push -u origin main
+  159  git add .
+  160  git commit -m "added output files"
+  161  git push -u origin main
+  162  ansible-doc apt
+  163  vim playbook-apt.yml
+  164  batcat ~/mycode/inv/dev/hosts >> hosts.output
+  165  cat hosts.output
+  166  batcat ~/mycode/inv/dev/hosts
+  167  batcat ~/mycode/inv/dev/hosts >> setup.output 
+  168  ansible-playbook -i ~/mycode/inv/dev/hosts ~/mycode/playbook-apt.yml >> playbook.output
+  169  batcat playbook.output
+  170  ssh bender
+  171  ansible-playbook ~/mycode/playbook-apt.yml
+  172  vim playbook-apt-absent.yml
+  173  ansible-playbook ~/mycode/playbook-apt-absent.yml >> remove.output
+  174  cat remove.output
+  175  ssh bender
+  176  ansible-playbook ~/mycode/playbook-apt-absent.yml
+  177  live gtg
+  178  git add .
+  179  git commit -m "ran first playbooks on inventory"
+  180  git push -u origin main
+  181  ls -la
+  182  cat ~/.ansible.cfg
+  183  cat ~/.ansible.cfg >> .not-ansible.cfg
+  184  rm ~/.ansible.cfg
+  185  rm ~/.ansible.cfg 2>/dev/null
+  186  vim ~/.ansible.cfg
+  187  ansible-config dump
+  188  ansible-config dump >> configdetails.output
+  189  vim ~/.ansible.cfg
+  190  ansible-config init --disabled -t all > ansible-example.cfg
+  191  less ansible-example.cfg
+  192  git add .
+  193  git commit -m "added more config files"
+  194  git push -u origin main
+  195  vim playbookcmd.yml
+  196  sudo apt install cowsay -y
+  197  vim ~/.ansible.cfg
+  198  ansible-playbook ~/mycode/playbookcmd.yml
+  199  vim ~/.ansible.cfg
+  200  ansible-playbook ~/mycode/playbookcmd.yml
+  201  sudo apt remove cowsay -y
+  202  live gtg
+  203  bash ~/px/scripts/full-setup.sh
+  204  ping -c 1 indy
+  205  batcat ~/mycode/inv/dev/hosts
+  206  batcat ~/.ansible.cfg
+  207  ssh indy
+  208  ansible -m ping raiders -i ~/mycode/inv/dev/
+  209  ansible -m raw raiders -i ~/mycode/inv/dev/ -a "apt-get update" -b
+  210  llm "explain how this code works: ansible -m raw raiders -i ~/mycode/inv/dev/ -a "apt install python3-pip -y" -b"
+  211  llm "explain how this code works: ansible -m raw raiders -i ~/mycode/inv/dev/ -a apt install python3-pip -y -b"
+  212  ansible -m raw raiders -i ~/mycode/inv/dev/ -a "apt install python3-pip -y" -b
+  213  ansible -m ping raiders -i ~/mycode/inv/dev/
+  214  vim ~/mycode/bootstrap-new-user.yml
+  215  cat bootstrap-new-user.yml
+  216  ansible-playbook ~/mycode/bootstrap-new-user.yml -i ~/mycode/inv/dev/
+  217  ssh indy
+  218  vim ~/mycode/bootstrap-new-user.yml
+  219  vim ~/mycode/remove-new-user.yml
+  220  ansible-playbook ~/mycode/remove-new-user.yml -i ~/mycode/inv/dev/
+  221  ssh indy
+  222  git add ,
+  223  git add .
+  224  git commit -m "Utilized Group, User, and Raw to manipulate systems with ad-hoc commands"
+  225  git push -u origin main 
+  226  live gtg
+  227  llm "explain this request, specifically what bootstrpping means: designing a playbook that might bootstrap the Indy host with the latest version of Python 3.x"
+  228  llm "explain this request is in ansible, specifically what bootstrpping means: designing a playbook that might bootstrap the Indy host with the latest version of Python 3.x"
+  229  history > day1history.txt
+  230  cat day1history.txt 
+  231  bash ~/px/scripts/full-setup.sh
+  232  batcat ~/mycode/inv/dev/hosts
+  233  ssh indy
+  234  ansible-doc ansible.builtin.raw
+  235  ansible-doc ansible.builtin.group
+  236  ansible-doc ansible.builtin.user
+  237  vim ~/mycode/playbook01.yml
+  238  cat playbook01.yml 
+  239  ansible-playbook ~/mycode/playbook01.yml -i ~/mycode/inv/dev/
+  240  ssh indy
+  241  vim playbook01loop.yml
+  242  ansible-playbook ~/mycode/playbook01loop.yml -i ~/mycode/inv/dev/
+  243  mkdir -p ~/mycode/vars/
+  244  vim vars/newusers1.yml
+  245  vim playbook01filesloop.yml
+  246  ansible-playbook ~/mycode/playbook01filesloop.yml -i ~/mycode/inv/dev/
+  247  vim vars/newusers2.yml
+  248  vim bootstrap-varsfiles.yml
+  249  ansible-playbook ~/mycode/bootstrap-varsfiles.yml -i ~/mycode/inv/dev/
+  250  ssh indy
+  251  vim vars/aptpkgs.yml
+  252  vim playbook01files02.yml
+  253  ansible-playbook ~/mycode/playbook01files02.yml -i ~/mycode/inv/dev/
+  254  ssh indy
+  255  history > day1history.txt
