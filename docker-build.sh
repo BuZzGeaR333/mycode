@@ -73,3 +73,8 @@ curl https://static.alta3.com/projects/ansible/deploy/ansiblecfg --create-dirs -
 
 echo -e "Inventory File Updated (/home/student/mycode/inv/dev/hosts)"
 curl https://static.alta3.com/projects/ansible/deploy/hosts --create-dirs -o ~/mycode/inv/dev/hosts
+
+echo -e "Nethosts Inventory File Updated (/home/student/mycode/inv/dev/nethosts)"
+curl https://static.alta3.com/projects/ansible/deploy/nethosts --create-dirs -o ~/mycode/inv/dev/nethosts
+
+ansible-playbook ~/px/scripts/px-access.yml -i ~/mycode/inv/dev/hosts
