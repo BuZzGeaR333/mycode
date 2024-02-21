@@ -7,10 +7,10 @@
   vars_prompt:
   - name: url_password
     prompt: Enter url_password
-    private: true
-    encrypt: sha512_crypt
+      #private: true
+      #encrypt: sha512_crypt
     confirm: true
-    salt_size: 7
+      #salt_size: 7
 
   vars:
     url_username: sammy  # this time include "sammy" as UN
