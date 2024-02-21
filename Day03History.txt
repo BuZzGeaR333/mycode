@@ -1,0 +1,785 @@
+    1  ls
+    2  # copy me!
+    3  pwd
+    4  ls
+    5  cd static
+    6  mkdir training_3rd
+    7  ls
+    8  cd training_3rd/
+    9  touch example_01.txt
+   10  ls
+   11  echo Alta3 Research Training rocks!
+   12  echo Alta3 Research has AWESOME labs! > 3rdfile.txt
+   13  echo Alta3 Research has AMAZING labs! >> 3rdfile.txt
+   14  cat 3rdfile.txt 
+   15  mv 3rdfile.txt ego_fuel.txt
+   16  ls
+   17  history 
+   18  man ls
+   19  cd ~
+   20  cd
+   21  vim zork.test
+   22  live gtg
+   23  cat zork.test
+   24  vim zork.test
+   25  cat zork.test
+   26  rm zork.test 
+   27  live gtg
+   28  VS Code - Working Ahead : )
+   29  VS Code - Working Ahead
+   30  mkdir VScode
+   31  ls
+   32  cd VS
+   33  cd VScode/
+   34  cat zork.py 
+   35  python3 zork.py 
+   36  Live gtg
+   37  cd ..
+   38  Live gtg
+   39  llm --help
+   40  YASSSSSSSS!
+   41  llm "Five cute names for a pet penguin"
+   42  llm 'python function that accepts a string and returns that string plus Alta3 appended to the end'
+   43  llm 'python code that bakes a cupcake'
+   44  cd VScode/
+   45  cd ..
+   46  cd VScode/
+   47  vim simple_no_comments.sh
+   48  cat simple_no_comments.sh 
+   49  bash simple_no_comments.sh 
+   50  cat simple_no_comments.sh | llm -s "explain this code"
+   51  live gtg
+   52  cd ..
+   53  git config --global credential.helper store
+   54  git config --global user.name "BuZzGeaR333"
+   55  git config --global user.email "123@example.com"
+   56  ls
+   57  git clone https://github.com/BuZzGeaR333/mycode ~/mycode
+   58  cd mycode/
+   59  ls
+   60  ls -a
+   61  git status
+   62  touch alta3test.txt
+   63  git status
+   64  git add .
+   65  git commit -m "added test file to ensure commits works"
+   66  git push origin -u main
+   67  live gtg
+   68  cd
+   69  live gtg
+   70  ansible --versio
+   71  ansible --version
+   72  python3 -m pip install ansible --user
+   73  python3 -m pip show ansible
+   74  ls -a
+   75  ls -ls
+   76  ls -la
+   77  live gtg
+   78  cat ~/px/scripts/full-setup.sh
+   79  cat ~/px/scripts/full-setup.sh | less
+   80  bash ~/px/scripts/full-setup.sh
+   81  ssh fry
+   82  ssh bender
+   83  ssh zoidberg
+   84  which sshpass
+   85  ssh farnsworth
+   86  ansible localhost -m ansible.builtin.command -a "whoami"
+   87  ansible localhost -a "pwd"
+   88  ansible-doc ansible.builtin.command
+   89  cat ~/px/scripts/full-setup.sh | less
+   90  batcat ~/mycode/inv/dev/hosts
+   91  man batcat
+   92  vim ~/mycode/inv/dev/applerecords
+   93  batcat ~/mycode/inv/dev/applerecords
+   94  batcat ~/.ansible.cfg
+   95  llm "Explain this code: ansible planetexpress -i ~/mycode/inv/dev/hosts -m ansible.builtin.command -a "whoami""
+   96  ansible planetexpress -i ~/mycode/inv/dev/hosts -m ansible.builtin.command -a "whoami"
+   97  ansible fry -a "whoami"
+   98  cd ~student/mycode/inv/dev/
+   99  ls -la
+  100  batcat hosts 
+  101  ansible farnsworth -i ~/mycode/inv/dev/ -m ansible.builtin.ping --ask-pass
+  102  ansible farnsworth -i ~/mycode/inv/dev/ -m ansible.builtin.ping --ask-pass\
+  103  ansible-inventory -i ~/mycode/inv/ --list
+  104  ansible-inventory -i ~/mycode/inv/ --graph
+  105  ansible-inventory -i ~/mycode/inv/ --host fry
+  106  cd ~
+  107  cd mycode/
+  108  git status
+  109  git add .
+  110  git commit -m "Building Ansible Inventory using bash commands"
+  111  git push -u origin main
+  112  git pull
+  113  git pull merge
+  114  git merge main
+  115  git push origin main
+  116  git pull
+  117  git config pull.rebase false
+  118  git pull
+  119  git push origin main
+  120  batcat ~/px/scripts/full-setup.sh
+  121  ansible h2 -i ~/mycode/inv/dev/hosts -m setup
+  122  ansible h2 -i ~/mycode/inv/dev/hosts -m setup | less
+  123  batcat ~/px/scripts/full-setup.sh >> ~/mycode/full-setup.sh
+  124  git add .
+  125  cat ~/px/scripts/full-setup.sh > ~/mycode/full-setup.sh
+  126  git add .
+  127  git commit -m "Copying the Dicker build file"
+  128  git push origin main
+  129  git pull
+  130  git push origin main
+  131  ansible-doc ansible.builtin.ping
+  132  ansible research -i ~/mycode/inv/dev/hosts -m ansible.builtin.ping
+  133  ansible h1 -i ~/mycode/inv/dev/hosts -m setup | less
+  134  batcat ~/.ssh/config
+  135  batcat --help
+  136  batcat --help | less
+  137  batcat ~/.ssh/config
+  138  ansible research -i ~/mycode/inv/dev/hosts -m ping -vvvvv | less
+  139  ansible h2 -i ~/mycode/inv/dev/hosts -m setup | less
+  140  ansible research -i ~/mycode/inv/dev/hosts -m setup -a "filter=ansible_processor_cores" | less
+  141  ansible research -i ~/mycode/inv/dev/hosts -m setup -a "filter=ansible_processor_cores"
+  142  ansible research -i ~/mycode/inv/dev/hosts -m setup -a "filter=ansible_date_time"
+  143  ansible research -i ~/mycode/inv/dev/hosts -m setup -a "filter=ansible_all_ipv4_addresses"
+  144  ansible h2 -i ~/mycode/inv/dev/hosts -m setup > ~/mycode/setup.output
+  145  batcat ~/mycode/setup.output
+  146  live gtg
+  147  batcat ~/setup.output
+  148  batcat ~/mycode/setup.output
+  149  git status
+  150  git add .
+  151  git commit -m "added new output files"
+  152  git push -u origin main
+  153  bash ~/px/scripts/full-setup.sh
+  154  bash ~/px/scripts/full-setup.sh > ~/mycode/setup.output
+  155  cat setup.output
+  156  git add .
+  157  sit push -u origin main
+  158  git push -u origin main
+  159  git add .
+  160  git commit -m "added output files"
+  161  git push -u origin main
+  162  ansible-doc apt
+  163  vim playbook-apt.yml
+  164  batcat ~/mycode/inv/dev/hosts >> hosts.output
+  165  cat hosts.output
+  166  batcat ~/mycode/inv/dev/hosts
+  167  batcat ~/mycode/inv/dev/hosts >> setup.output 
+  168  ansible-playbook -i ~/mycode/inv/dev/hosts ~/mycode/playbook-apt.yml >> playbook.output
+  169  batcat playbook.output
+  170  ssh bender
+  171  ansible-playbook ~/mycode/playbook-apt.yml
+  172  vim playbook-apt-absent.yml
+  173  ansible-playbook ~/mycode/playbook-apt-absent.yml >> remove.output
+  174  cat remove.output
+  175  ssh bender
+  176  ansible-playbook ~/mycode/playbook-apt-absent.yml
+  177  live gtg
+  178  git add .
+  179  git commit -m "ran first playbooks on inventory"
+  180  git push -u origin main
+  181  ls -la
+  182  cat ~/.ansible.cfg
+  183  cat ~/.ansible.cfg >> .not-ansible.cfg
+  184  rm ~/.ansible.cfg
+  185  rm ~/.ansible.cfg 2>/dev/null
+  186  vim ~/.ansible.cfg
+  187  ansible-config dump
+  188  ansible-config dump >> configdetails.output
+  189  vim ~/.ansible.cfg
+  190  ansible-config init --disabled -t all > ansible-example.cfg
+  191  less ansible-example.cfg
+  192  git add .
+  193  git commit -m "added more config files"
+  194  git push -u origin main
+  195  vim playbookcmd.yml
+  196  sudo apt install cowsay -y
+  197  vim ~/.ansible.cfg
+  198  ansible-playbook ~/mycode/playbookcmd.yml
+  199  vim ~/.ansible.cfg
+  200  ansible-playbook ~/mycode/playbookcmd.yml
+  201  sudo apt remove cowsay -y
+  202  live gtg
+  203  bash ~/px/scripts/full-setup.sh
+  204  ping -c 1 indy
+  205  batcat ~/mycode/inv/dev/hosts
+  206  batcat ~/.ansible.cfg
+  207  ssh indy
+  208  ansible -m ping raiders -i ~/mycode/inv/dev/
+  209  ansible -m raw raiders -i ~/mycode/inv/dev/ -a "apt-get update" -b
+  210  llm "explain how this code works: ansible -m raw raiders -i ~/mycode/inv/dev/ -a "apt install python3-pip -y" -b"
+  211  llm "explain how this code works: ansible -m raw raiders -i ~/mycode/inv/dev/ -a apt install python3-pip -y -b"
+  212  ansible -m raw raiders -i ~/mycode/inv/dev/ -a "apt install python3-pip -y" -b
+  213  ansible -m ping raiders -i ~/mycode/inv/dev/
+  214  vim ~/mycode/bootstrap-new-user.yml
+  215  cat bootstrap-new-user.yml
+  216  ansible-playbook ~/mycode/bootstrap-new-user.yml -i ~/mycode/inv/dev/
+  217  ssh indy
+  218  vim ~/mycode/bootstrap-new-user.yml
+  219  vim ~/mycode/remove-new-user.yml
+  220  ansible-playbook ~/mycode/remove-new-user.yml -i ~/mycode/inv/dev/
+  221  ssh indy
+  222  git add ,
+  223  git add .
+  224  git commit -m "Utilized Group, User, and Raw to manipulate systems with ad-hoc commands"
+  225  git push -u origin main 
+  226  live gtg
+  227  llm "explain this request, specifically what bootstrpping means: designing a playbook that might bootstrap the Indy host with the latest version of Python 3.x"
+  228  llm "explain this request is in ansible, specifically what bootstrpping means: designing a playbook that might bootstrap the Indy host with the latest version of Python 3.x"
+  229  history > day1history.txt
+  230  cat day1history.txt 
+  231  bash ~/px/scripts/full-setup.sh
+  232  batcat ~/mycode/inv/dev/hosts
+  233  ssh indy
+  234  ansible-doc ansible.builtin.raw
+  235  ansible-doc ansible.builtin.group
+  236  ansible-doc ansible.builtin.user
+  237  vim ~/mycode/playbook01.yml
+  238  cat playbook01.yml 
+  239  ansible-playbook ~/mycode/playbook01.yml -i ~/mycode/inv/dev/
+  240  ssh indy
+  241  vim playbook01loop.yml
+  242  ansible-playbook ~/mycode/playbook01loop.yml -i ~/mycode/inv/dev/
+  243  mkdir -p ~/mycode/vars/
+  244  vim vars/newusers1.yml
+  245  vim playbook01filesloop.yml
+  246  ansible-playbook ~/mycode/playbook01filesloop.yml -i ~/mycode/inv/dev/
+  247  vim vars/newusers2.yml
+  248  vim bootstrap-varsfiles.yml
+  249  ansible-playbook ~/mycode/bootstrap-varsfiles.yml -i ~/mycode/inv/dev/
+  250  ssh indy
+  251  vim vars/aptpkgs.yml
+  252  vim playbook01files02.yml
+  253  ansible-playbook ~/mycode/playbook01files02.yml -i ~/mycode/inv/dev/
+  254  ssh indy
+  255  history > day1history.txt
+  256  git add .
+  257  git commit -m "added looping and variable files for runing raw ansible playbooks"
+  258  git push -u origin main
+  259  live gtg
+  260  bash ~/px/scripts/full-setup.sh
+  261  ansible-doc ansible.builtin.file
+  262  vim playbook-fileshell.yml
+  263  batcat ~/mycode/playbook-fileshell.yml
+  264  ansible-playbook ~/mycode/playbook-fileshell.yml -i ~/mycode/inv/dev/hosts
+  265  ssh bender
+  266  vim playbook-fileshell.yml
+  267  ansible-playbook ~/mycode/playbook-fileshell.yml -i ~/mycode/inv/dev/hosts
+  268  ssh bender@10.10.2.3
+  269  live gtg
+  270  advanced solution start
+  271  cd
+  272  touch ~/output/path.txt
+  273  mkdir ~/output
+  274  touch ~/output/path.txt
+  275  cd VScode/
+  276  vim playbook-challenge01.yml
+  277  ansible-playbook ~/mycode/playbook-challenge01.yml -i ~/mycode/inv/dev/hosts
+  278  ansible-playbook ~/VScode/playbook-challenge01.yml -i ~/mycode/inv/dev/hosts
+  279  vim playbook-challenge01.yml
+  280  ansible-playbook ~/VScode/playbook-challenge01.yml -i ~/mycode/inv/dev/hosts
+  281  vim playbook-challenge01.yml
+  282  ansible-playbook ~/VScode/playbook-challenge01.yml -i ~/mycode/inv/dev/hosts
+  283  vim playbook-challenge01.yml
+  284  ansible-playbook ~/VScode/playbook-challenge01.yml -i ~/mycode/inv/dev/hosts
+  285  ssh fry
+  286  vim playbook-challenge01.yml
+  287  ansible-playbook ~/VScode/playbook-challenge01.yml -i ~/mycode/inv/dev/hosts
+  288  vim playbook-challenge01.yml
+  289  ansible-playbook ~/VScode/playbook-challenge01.yml -i ~/mycode/inv/dev/hosts
+  290  ssh fry
+  291  bash ~/px/scripts/full-setup.sh
+  292  mkdir -p ~/VScode/files/
+  293  cd
+  294  ls -la
+  295  cp mycode VScode/
+  296  cp -r mycode VScode/
+  297  cp -r output VScode/
+  298  cp -r px VScode/
+  299  cd VScode/
+  300  mkdir -p /mycode/files/
+  301  vim /mycode/files/fry.txt
+  302  sudo vim /mycode/files/fry.txt
+  303  mkdir -p /files/
+  304  ls
+  305  cd px
+  306  ls
+  307  cat README.md 
+  308  vim README.md 
+  309  cd ..
+  310  history
+  311  mkdir test
+  312  ls
+  313  # hmm looks like the directories were made
+  314  IF I try to VIm a file it wont save
+  315  # IF I try to VIm a file it wont save
+  316  mkdir mycode/files/
+  317  vim /mycode/files/fry.txt
+  318  ls
+  319  cd files/
+  320  ls
+  321  cd ../
+  322  cd mycode/
+  323  ls
+  324  cd files/
+  325  ls
+  326  vim fry.txt
+  327  cat fry.txt
+  328  ansible-doc ansible.builtin.copy
+  329  cd ..
+  330  cd..
+  331  cd ..
+  332  vim playbook-copy.yml
+  333  rm px
+  334  rm -r px
+  335  cat playbook-copy.yml
+  336  ansible-playbook ~/mycode/playbook-copy.yml
+  337  ansible-playbook playbook-copy.yml
+  338  rm -r px -y
+  339  rm -r px
+  340  ls -la
+  341  mkdir files
+  342  vim ~/VScode/files/fry.txt
+  343  cat ~/VScode/files/fry.txt 
+  344  vim ~VScode/playbook-copy.yml
+  345  vim ~/VScode/playbook-copy.yml
+  346  ansible-playbook ~/VScode/playbook-copy.yml
+  347  ssh bender
+  348  vim playbook-copy2.yml
+  349  ansible-playbook playbook-copy2.yml
+  350  ssh bender@10.10.2.3
+  351  git status
+  352  git add .
+  353  cd ..
+  354  ls -la
+  355  cd VScode/
+  356  ls -la
+  357  cp playbook-challenge01.yml ~/mycode/playbook-challenge01.yml
+  358  cd ..
+  359  cd myco
+  360  cd mycode/
+  361  git status
+  362  mkdir -p ~/mycode/files/
+  363  vim ~/mycode/files/fry.txt
+  364  vim ~/mycode/playbook-copy.yml
+  365  ansible-playbook ~/mycode/playbook-copy.yml
+  366  vim ~/mycode/playbook-copy2.yml
+  367  ansible-playbook ~/mycode/playbook-copy2.yml
+  368  git status
+  369  git add .
+  370  git commit -m "Added shell and copy yaml builds"
+  371  git push -u origin main
+  372  bash ~/px/scripts/full-setup.sh
+  373  vim ~/mycode/playbook-apt02.yml
+  374  ansible-playbook ~/mycode/playbook-apt02.yml
+  375  ssh fry
+  376  vim ~/mycode/playbook-apt03.yml
+  377  ansible-playbook ~/mycode/playbook-apt03.yml
+  378  ansible planetexpress -m setup -a "filter=ansible_distribution"
+  379  vim ~/mycode/playbook-apt04.yml
+  380  ansible-playbook ~/mycode/playbook-apt04.yml
+  381  live gtg
+  382  git status
+  383  git commit -m "added apt files"
+  384  git add .
+  385  git commit -m "added apt files"
+  386  git push -u origin main
+  387* 
+  388  bash ~/px/scripts/full-setup.sh
+  389  vim ~/mycode/playbook-yum.yml
+  390  ansible-playbook ~/mycode/playbook-yum.yml
+  391  ssh farnsworth
+  392  vim ~/mycode/playbook-yum2.yml
+  393  ansible-playbook ~/mycode/playbook-yum2.yml
+  394  vim ~/mycode/playbook-yum3.yml
+  395  ansible-playbook ~/mycode/playbook-yum3.yml
+  396  ssh farnsworth
+  397  live gtg
+  398  git status
+  399  git add .
+  400  git commit -m "Add yum /apt using when files"
+  401  git push -u origin main
+  402  bash ~/px/scripts/full-setup.sh
+  403  vim ~/mycode/geturl-playbook01.yml
+  404  ansible-playbook ~/mycode/geturl-playbook01.yml
+  405  ssh bender
+  406  vim ~/mycode/geturl-setupserver-playbook02.yml
+  407  ansible-playbook ~/mycode/geturl-setupserver-playbook02.yml
+  408  curl http://10.10.2.4/admin/secure.txt --user "sammy:larry"
+  409  curl http://10.10.2.4/admin/secure.txt
+  410  vim ~/mycode/uri-playbook01.yml\
+  411  vim ~/mycode/uri-playbook01.yml
+  412  ansible-playbook ~/mycode/uri-playbook01.yml
+  413  batcat ~/ansible-downloaded-the-secret-file.txt
+  414  vim ~/mycode/uri-playbook01.yml
+  415  vim ~/mycode/uri-playbook01vars.yml
+  416  ansible-playbook ~/mycode/uri-playbook01vars.yml
+  417  vim ~/mycode/uri-playbook01vars.yml
+  418  ansible-playbook ~/mycode/uri-playbook01vars.yml
+  419  live gtg
+  420  vim ~/mycode/uri-playbook01varsprompt.yml
+  421  vim ~/mycode/uri-playbook01vars.yml
+  422  vim ~/mycode/uri-playbook01varsprompt.yml
+  423  ansible-playbook ~/mycode/uri-playbook01varsprompt.yml
+  424  vim ~/mycode/uri-playbook01varsprompt.yml
+  425  ansible-playbook ~/mycode/uri-playbook01varsprompt.yml
+  426  vim ~/mycode/uri-playbook01varsprompt.yml
+  427  ansible-playbook ~/mycode/uri-playbook01varsprompt.yml
+  428  vim ~/mycode/uri-playbook01varsprompt.yml
+  429  ansible-playbook ~/mycode/uri-playbook01varsprompt.yml
+  430  vim ~/mycode/uri-playbook01varsprompt.yml
+  431  ansible-playbook ~/mycode/uri-playbook01varsprompt.yml
+  432  vim ~/mycode/uri-playbook01varsprompt.yml
+  433  git status
+  434  git add .
+  435  git commit -m "add the url-uri files"
+  436  git push -u origin main
+  437  bash ~/px/scripts/full-setup.sh
+  438  vim ~/mycode/playbook-file.yml
+  439  ansible-playbook ~/mycode/playbook-file.yml --limit 'all:!farnsworth'
+  440  vim ~/mycode/playbook-file.yml
+  441  ansible-playbook ~/mycode/playbook-file.yml --limit 'all:!farnsworth'
+  442  ssh bender
+  443  vim ~/mycode/playbook-file.yml
+  444  ansible-playbook ~/mycode/playbook-file.yml --limit 'all:!farnsworth'
+  445  vim ~/mycode/playbook-file02.yml
+  446  batcat ~/mycode/inv/dev/hosts
+  447  ansible-playbook ~/mycode/playbook-file02.yml
+  448  ssh bender
+  449  ssh fry@10.10.2.4
+  450  vim ~/mycode/playbook-file03.yml
+  451  ansible-playbook ~/mycode/playbook-file03.yml
+  452  ssh bender
+  453  vim ~/mycode/playbook-file04.yml
+  454  ansible-playbook ~/mycode/playbook-file04.yml
+  455  ssh bender
+  456  git status
+  457  git add .
+  458  git commit -m "Created file playbooks with Ansible"
+  459  git push - u origin main
+  460  git push -u origin main
+  461  live gtg
+  462  bash ~/px/scripts/full-setup.sh
+  463  ansible-doc ansible.builtin.git
+  464  vim ~/mycode/modulegit.yml
+  465  ansible-playbook ~/mycode/modulegit.yml -i ~/mycode/inv/dev/
+  466  ssh bender
+  467  git status
+  468  git add .
+  469  git commit -m "use Git Module to save a repository"
+  470  git push -u origin main
+  471  live gtg
+  472  bash ~/px/scripts/full-setup.sh
+  473  ssh fry
+  474  vim ~/mycode/linechange.yml
+  475  ansible-playbook ~/mycode/linechange.yml
+  476  ssh fry
+  477  vim ~/mycode/replacechange.yml
+  478  ansible-playbook ~/mycode/replacechange.yml
+  479  ssh fry
+  480  vim ~/mycode/replacechange.yml
+  481  ansible-playbook ~/mycode/replacechange.yml
+  482  ssh fry
+  483  git add .
+  484  git commit -m "using regex in replace and lineinfile"
+  485  git push -u origin main
+  486  bash ~/px/scripts/full-setup.sh
+  487  mkdir -p ~/mycode/templates/
+  488  vim ~/mycode/templates/ship.cfg.j2
+  489  vim ~/mycode/template-playbook01.yml
+  490  ansible-playbook ~/mycode/template-playbook01.yml
+  491  ssh fry
+  492  vim ~/mycode/templates/mission-orders.txt.j2
+  493  mkdir -p ~/mycode/vars/
+  494  vim ~/mycode/vars/planetexpress.yml
+  495  vim ~/mycode/template-playbook02.yml
+  496  ansible-playbook ~/mycode/template-playbook02.yml
+  497  ssh bender
+  498  ssh fry
+  499  ansible-playbook ~/mycode/template-playbook02.yml -e "planet='luna park'"
+  500  ssh fry
+  501  vim ~/mycode/template-playbook02.yml
+  502  vim ~/mycode/vars/planetexpress.yml
+  503  ansible-playbook ~/mycode/template-playbook02.yml -e "planet='cineplex 14'"
+  504  ssh zoidberg 
+  505  ansible-playbook ~/mycode/template-playbook02.yml -e "planet='omicron persei 8'"
+  506  sshe fry
+  507  ssh fry
+  508  vim ~/mycode/templates/crew_report.txt.j2
+  509  vim ~/mycode/template-playbook03.yml
+  510  ansible-playbook ~/mycode/template-playbook03.yml
+  511  ssh fry
+  512  vim ~/mycode/templates/mission_orders.txt.j2
+  513  live gtg
+  514  cd templates/
+  515  ls
+  516  cat mission-orders.txt.j2 
+  517  ls - la
+  518  ls -la
+  519  ls
+  520  cd ..
+  521  ls
+  522  vim ~/mycode/template-playbook02.yml
+  523  ansible-playbook ~/mycode/template-playbook03.yml
+  524  ssh fry
+  525  vim ~/mycode/template-playbook02.yml
+  526  ansible-playbook ~/mycode/template-playbook03.yml
+  527  ssh fry
+  528  vim ~/mycode/template-playbook02.yml
+  529  vim ~/mycode/template-playbook03challenge.yml
+  530  ansible-playbook ~/mycode/template-playbook03challenge.yml.yml
+  531  ansible-playbook ~/mycode/template-playbook03challenge.yml
+  532  vim ~/mycode/template-playbook03challenge.yml
+  533  ansible-playbook ~/mycode/template-playbook03challenge.yml
+  534  vim ~/mycode/template-playbook03challenge.yml
+  535  ansible-playbook ~/mycode/template-playbook03challenge.yml
+  536  vim ~/mycode/template-playbook03challenge.yml
+  537  ansible-playbook ~/mycode/template-playbook03challenge.yml
+  538  ssh fry
+  539  live gtg
+  540  git add .
+  541  git commit -m "Add jinja templating with techniques for variables"
+  542  git push -u origin main
+  543  vim ~/mycode/playbook-loop01.yml
+  544  ansible-playbook ~/mycode/playbook-loop01.yml
+  545  ansible-playbook ~/mycode/playbook-loop01.yml -e ethList=["1.1.1.1", "2.2.2.2"]
+  546  ansible-playbook ~/mycode/playbook-loop01.yml -e ethList=["1.1.1.1", "2.2.2.2"] | less
+  547  vim ~/mycode/vars/pblist01.json
+  548  ansible-playbook ~/mycode/playbook-loop01.yml --extra-vars "@~/mycode/vars/pblist01.json"
+  549  vim ~/mycode/playbook-loop02.yml
+  550  ansible-playbook ~/mycode/playbook-loop02.yml
+  551  vim ~/mycode/playbook-loop03.yml
+  552  ansible-playbook ~/mycode/playbook-loop03.yml
+  553  vim ~/mycode/playbook-loop04.yml
+  554  ansible-playbook ~/mycode/playbook-loop04.yml
+  555  live gtg
+  556  git add .
+  557  git commit -m "attached the files for making loop style and debug playbooks"
+  558  git push -u origin main
+  559  ls -la
+  560  history > day2CLIcommands.txt
+  561  cat day2CLIcommands.txt 
+  562  git add .
+  563  git commit -m "finished day 2"
+  564  git push -u origin main
+  565  vim ~/mycode/playbook-dictrecall01.yml
+  566  ansible-playbook ~/mycode/playbook-dictrecall01.yml
+  567  vim ~/mycode/playbook-yaml-tf01.yml
+  568  ansible-playbook ~/mycode/playbook-yaml-tf01.yml
+  569  ansible-playbook ~/mycode/playbook-yaml-tf01.yml -e bool_var=False
+  570  vim ~/mycode/playbook-jinja-filters-03.yml
+  571  ansible-playbook ~/mycode/playbook-jinja-filters-03.yml -vv
+  572  ansible-playbook ~/mycode/playbook-jinja-filters-03.yml -v
+  573  ansible-playbook ~/mycode/playbook-jinja-filters-03.yml
+  574  git add .
+  575  git commit -m "added conditional Dictionary Jinja files, lesson 30"
+  576  git push -us origin main
+  577  git push -u origin main
+  578  ansible-playbook example.yml --tags "configuration,packages"
+  579  bash ~/px/scripts/full-setup.sh
+  580  vim ~/.ansible.cfg
+  581  vim ~/mycode/templates/cargo_manifest.txt.j2
+  582  vim ~/mycode/templates/navigation_charts.cfg.j2
+  583  vim ~/mycode/templates/orders.txt.j2
+  584  vim ~/mycode/playbook-crewauto.yml
+  585  vim ~/mycode/vars/tempvars.yml
+  586  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="cargo"
+  587  ssh fry
+  588  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="ship_prep"
+  589  ssh fry
+  590  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="orders" --limit="fry"
+  591  ssh fry
+  592  live gtg
+  593  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="orders" --limit="fry" --list
+  594  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="orders" --limit="fry" --list-tasks
+  595  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="ship_prep" --;ist-tasks
+  596  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="ship_prep" --list-tasks
+  597  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="ship_prep,crew" --list-tasks
+  598  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="ship_prep,orders" --list-tasks
+  599  ansible-playbook ~/mycode/playbook-crewauto.yml --tags="nav,orders" --list-tasks
+  600  git add .
+  601  git commit -m "Lesson 31 - Tags"
+  602  git push -u origin main
+  603  bash ~/px/scripts/full-setup.sh
+  604  vim ~/mycode/prompt-playbook01.yml
+  605  ansible-playbook ~/mycode/prompt-playbook01.yml
+  606  vim ~/mycode/prompt-playbook01.yml
+  607  vim ~/mycode/prompt-playbook02.yml
+  608  ansible-playbook ~/mycode/prompt-playbook02.yml
+  609  live gtg
+  610  ls
+  611  vim template-playbook03challenge.yml 
+  612  vim uri-playbook01varsprompt.yml 
+  613  ansible-playbook uri-playbook01varsprompt.yml
+  614  git add .
+  615  git commit -m "vasr prompt lesson"
+  616  git push -u origin main
+  617  bash ~/px/scripts/full-setup.sh
+  618  vim ~/mycode/playbook-handler01.yml
+  619  ansible-playbook ~/mycode/playbook-handler01.yml -i ~/mycode/inv/dev/hosts
+  620  curl http://10.10.2.3
+  621  curl http://10.10.2.4
+  622  vim ~/mycode/playbook-handler01.yml
+  623  vim ~/mycode/files/index.html
+  624  ansible-playbook ~/mycode/playbook-handler01.yml -i ~/mycode/inv/dev/hosts
+  625  curl http://10.10.2.3
+  626  curl http://10.10.2.4
+  627  vim ~/mycode/playbook-handler01.yml
+  628  ansible-playbook ~/mycode/playbook-handler01.yml -i ~/mycode/inv/dev/hosts
+  629  vim ~/mycode/playbook-handler02-listen.yml
+  630  bash ~/px/scripts/full-setup.sh
+  631  ansible-playbook ~/mycode/playbook-handler02-listen.yml -i ~/mycode/inv/dev/hosts
+  632  vim ~/mycode/playbook-handler02-listen.yml
+  633  ansible-playbook ~/mycode/playbook-handler02-listen.yml -i ~/mycode/inv/dev/hosts
+  634  vim ~/mycode/playbook-handler02-listen.yml
+  635  live gtg
+  636  git add .
+  637  git commit -m "Handlers and Liisteners"
+  638  git push -u origin main
+  639  bash ~/px/scripts/full-setup.sh
+  640  vim ~/mycode/playbook-error-handler01.yml
+  641  ansible-playbook ~/mycode/playbook-error-handler01.yml
+  642  ssh bender@10.10.2.3
+  643  vim ~/mycode/playbook-error-handler02.yml
+  644  ansible-playbook ~/mycode/playbook-error-handler02.yml
+  645  ssh bender@10.10.2.3
+  646  vim ~/mycode/playbook-error-handler03.yml
+  647  ansible-playbook ~/mycode/playbook-error-handler03.yml
+  648  ssh bender@10.10.2.3
+  649  vim ~/mycode/playbook-error-handler04.yml
+  650  ansible-playbook ~/mycode/playbook-error-handler04.yml
+  651  vim ~/mycode/playbook-error-handler03.yml
+  652  vim ~/mycode/playbook-error-handler04.yml
+  653  ansible-playbook ~/mycode/playbook-error-handler04.yml
+  654  vim ~/mycode/playbook-error-handler03.yml
+  655  vim ~/mycode/playbook-error-handler04.yml
+  656  ansible-playbook ~/mycode/playbook-error-handler04.yml
+  657  git add .
+  658  git commit -m "make errors Block Rescue Error Handling: lesson 34"
+  659  git push -u origin main
+  660  sudo apt install tree -y
+  661  mkdir -p ~/mycode/classicproject/
+  662  mkdir -p ~/mycode/classicproject/roles/
+  663  cd ~/mycode/classicproject/roles/
+  664  ansible-galaxy init bootstrap
+  665  tree
+  666  ansible-galaxy init securityapps
+  667  tree
+  668  ansible-galaxy init securityapps
+  669  ansible-galaxy init officetools
+  670  tree
+  671  cat officetools/tasks/
+  672  cat officetools/tasks/main.yml 
+  673  cd ..
+  674  vim ~/mycode/classicproject/classicpb.yml
+  675  vim ~/mycode/classicproject/frameworkpb.yml
+  676  live gtg
+  677  git add .
+  678  git commit -m "added roles files"
+  679  git push -u origin main
+  680  andible-config dump >> Ansible_Activity_log.txt
+  681  ansible-config dump >> Ansible_Activity_log.txt
+  682  cat Ansible_Activity_log.txt | less
+  683  vim ~/.ansible.cfg
+  684  vim ~/mycode/playbook-logme.yml
+  685  ansible-config dump
+  686  ansible-playbook ~/mycode/playbook-logme.yml
+  687  cat /tmp/ansible.log
+  688  sudo mkdir -p /etc/ansible/
+  689* 
+  690  ansible-config dump
+  691  ansible-playbook ~/mycode/playbook-logme.yml
+  692  cat /tmp/ansible.log
+  693  vim ~/mycode/playbook-logme02.yml
+  694  ansible-playbook ~/mycode/playbook-logme02.yml
+  695  vim ~/mycode/playbook-logme02.yml
+  696  ansible-playbook ~/mycode/playbook-logme02.yml
+  697  ansible-playbook ~/mycode/playbook-logme02.yml -v
+  698  sudo mv ~/.ansible.cfg ~/mycode/ansiblelogging.cfg
+  699  vim ~/.ansible.cfg
+  700  ansible-config dump
+  701  gtg live
+  702  live gtg
+  703  git add .
+  704  git commit -m "created logging files"
+  705  git push -u origin main
+  706  live gtg
+  707  bash ~/px/scripts/full-setup.sh
+  708  vim ~/mycode/playbook-register01.yml
+  709  ansible-playbook ~/mycode/playbook-register01.yml
+  710  vim ~/mycode/playbook-register01.yml
+  711  ansible-playbook ~/mycode/playbook-register01.yml
+  712  vim ~/mycode/playbook-register01.yml
+  713  vim ~/mycode/playbook-register02.yml
+  714  ansible-playbook ~/mycode/playbook-register02.yml
+  715  vim ~/mycode/playbook-register02.yml
+  716  ansible-playbook ~/mycode/playbook-register02.yml
+  717  vim ~/mycode/playbook-register03.yml
+  718  ansible-playbook ~/mycode/playbook-register03.yml
+  719  ssh fry@10.10.2.4
+  720  vim ~/mycode/playbook-register04.yml
+  721  ansible-playbook ~/mycode/playbook-register04.yml
+  722  ssh fry@10.10.2.4
+  723  cat /home/leela/README.txt
+  724  ssh fry@10.10.2.4
+  725  git add .
+  726  git commit -m "Register and when keywords lesson 38"
+  727  git push -u origin main
+  728  live gtg
+  729  vim playbook-varspractice01.yml
+  730  ansible-playbook playbook-varspractice01.yml
+  731  vim ~/mycode/vars/titanvars.yml
+  732  vim playbook-varspractice02-broken.yml
+  733  02-broken.yml
+  734  student@bchd:~/mycode$ 
+  735  ansible-playbook playbook-varspractice02-broken.yml
+  736  vim playbook-varspractice02-fixed.yml
+  737  ansible-playbook playbook-varspractice02-fixed.yml
+  738  vim playbook-varspractice03.yml
+  739  ansible-playbook playbook-varspractice03.yml 
+  740  python3
+  741  vim ~/mycode/playbook-varspractice04.yml
+  742  ansible-playbook ~/mycode/playbook-varspractice04.yml --tags "keys"
+  743  ansible-playbook ~/mycode/playbook-varspractice04.yml --tags "data"
+  744  ansible-playbook ~/mycode/playbook-varspractice04.yml --tags "split"
+  745  cat /tmp/teamlocations.txt
+  746  git add .
+  747  git commit -m "create varible playbooks using python and other nested actions"
+  748  git psh -u origin main
+  749  git push -u origin main
+  750  live gtg
+  751  ansible-doc -t lookup -l
+  752  ansible-doc -t lookup url
+  753  vim ~/mycode/playbook-lookup-url.yml
+  754  ansible-playbook ~/mycode/playbook-lookup-url.yml
+  755  ansible-doc -t lookup csvfile
+  756  vim ~/mycode/playbook-lookup-csvfile.yml
+  757  vim ~/mycode/files/ip_data.csv
+  758  ansible-playbook ~/mycode/playbook-lookup-csvfile.yml
+  759  vim ~/mycode/playbook-lookup-template.yml
+  760  vim ~/mycode/templates/tftp.cfg.j2
+  761  ansible-playbook ~/mycode/playbook-lookup-template.yml
+  762  cat  ~/tftp.cfg  
+  763  live gtg
+  764  git add .
+  765  git commit -m "add lab 40 - lookup plugins - python plugins"
+  766  git push -u origin main
+  767  vim ~/mycode/playbook-littletest.yml
+  768  vim ~/.ansible.cfg
+  769  ansible-playbook ~/mycode/playbook-littletest.yml
+  770  vim ~/.ansible.cfg
+  771  ansible-playbook ~/mycode/playbook-littletest.yml
+  772  vim ~/.ansible.cfg
+  773  ansible-playbook ~/mycode/playbook-littletest.yml
+  774  vim ~/.ansible.cfg
+  775  ansible-playbook ~/mycode/playbook-littletest.yml
+  776  cd /tmp/hosts/
+  777  cat localhost 
+  778  cd ~/mycode/
+  779  vim ~/.ansible.cfg
+  780  git add ,
+  781  git add .
+  782  git commit -m "Lab 41 - changing stoud callback settings in ansible configs"
+  783  git push -u origin main
+  784  live gtg
+  785  history > Day03History.txt
