@@ -1,0 +1,16 @@
+---
+- name: Playbook that runs a Get requelst on url
+  hosts: localhost
+
+  tasks:
+  - name: URL Get request
+    ansible.builtin.uri:
+      url: http://api.open-notify.org/astros.json 
+      method: GET
+      return_content: true
+    register: results
+  
+  - name: Print out the 'results'
+    debug:
+      var: results
+      # notice there is a stdout and stdout_lines
